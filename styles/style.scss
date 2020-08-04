@@ -1,0 +1,17 @@
+
+$font-color: #ebe6f0;
+$main-color:#111012;
+
+
+@mixin flex($justify, $align, $direction){
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@import "global";
+@import "nav";
+@import "about";
+@import "footer";

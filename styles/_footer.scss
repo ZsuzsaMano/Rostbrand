@@ -1,0 +1,16 @@
+// main: style.scss
+
+footer{
+
+  background-color: $main-color;
+text-align: center;
+color: $font-color;
+  .social-media{
+   padding: 1rem;
+  a { margin: 1rem;
+
+    img{
+    max-width: 3rem;}
+    }
+}
+}
