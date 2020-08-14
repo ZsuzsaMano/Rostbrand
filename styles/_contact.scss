@@ -6,7 +6,7 @@
   flex-wrap:wrap;
   min-height: 80vh;
   .text{
-    flex: 2 1 40rem;
+    flex: 2 1 46rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -16,8 +16,7 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      min-height: 60vh;
-      margin-top: 10vh;
+      min-height: 50vh;
       textarea{
         padding: 0.5rem;
         border-radius: 5px;
