@@ -44,20 +44,7 @@
       width: 100%;
       object-fit:cover;
     }
-    #cloud{
-      max-width: 250px;
-      position: absolute;
-      top: 5%;
-      left: -23%;
-      animation: moveCloud 35s forwards;
-  }
-  #cloud1{
-    max-width: 250px;
-    position: absolute;
-    top: 13%;
-    left: -6%;
-    animation: moveCloud1 35s forwards;
-}
+
 .card-text{
   width: 80%;
 line-height: 2rem;
@@ -80,27 +67,5 @@ opacity:0.2;
 }
 
 
-  }
-}
-
-@keyframes moveCloud{
-  from{
-    left:-23%;
-    top:5%;
-  }
-  to{
-    left: 90%;
-    top: -10%;
-  }
-}
-
-@keyframes moveCloud1{
-  from{
-    left:-6%;
-    top:13%;
-  }
-  to{
-    left: 100%;
-    top: -20%;
   }
 }

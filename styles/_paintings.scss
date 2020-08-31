@@ -1,0 +1,23 @@
+// main:style.scss
+.paintings{
+@include flex(space-around, center, row);
+margin-top: 10vh;
+}
+
+figure{
+  width: 200px;
+  height: auto;
+  transition: 1s;
+  padding: 0.8rem;
+  background:rgb(244, 245, 245);
+  color:black;
+  font-size: 0.8rem;
+  &:hover{
+
+  }
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
