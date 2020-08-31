@@ -43,8 +43,11 @@ display: none;
 }
 
 .lightbox__image{
-  height: 70vh;
+  height: 80vh;
   width: auto;
+  padding: 0.8rem;
+  background:rgb(244, 245, 245);
+  border: 1px solid rgb(220, 220, 220);
 }
 
 #lightbox.active{
