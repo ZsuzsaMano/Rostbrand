@@ -31,3 +31,11 @@ img{
 figcaption{
 display: none
 }
+
+@media screen and( max-width: 600px){
+  figure{
+    width: 100px;
+    height:80px;
+    padding: 0.2rem;
+  }
+}
