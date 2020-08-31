@@ -10,10 +10,10 @@
   <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
   <script id="gallery-template" type="text/x-handlebars-template">
     {{#each galleryName}}
-    <a href="{{link}}">  <figure>
+    <figure>
       <img src="{{link}}" alt="{{name}}" style="width:100%">
       <figcaption>{{name}}.</figcaption>
-    </figure></a>
+    </figure>
         {{/each}}
   </script>
 </head>
@@ -49,6 +49,7 @@
 
 </section>
   <script src="./js/nav.js" ></script>
-<script src="./js/handlebar.js" type="text/javascript"></script>
+<script src="./js/handlebar.js"></script>
+  <script src="./js/lightbox.js" ></script>
 </body>
 </html>

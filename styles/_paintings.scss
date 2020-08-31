@@ -16,6 +16,7 @@ figure{
   color:black;
   font-size: 0.8rem;
   margin-top: 1rem;
+  cursor: pointer;
   &:hover{
     filter: grayscale(50%);
     transform: scale(1.1,1.1);
@@ -29,7 +30,26 @@ img{
 }
 
 figcaption{
-display: none
+display: none;
+}
+
+#lightbox{
+  position:fixed;
+  z-index: 10;
+  top:0;
+  width:100%;
+  height: 100%;
+  display:none;
+}
+
+.lightbox__image{
+  height: 70vh;
+  width: auto;
+}
+
+#lightbox.active{
+  @include flex(center,center,row);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 @media screen and( max-width: 600px){
