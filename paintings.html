@@ -6,7 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Paintings</title>
   <link rel="stylesheet" href="./styles/style.min.css">
-  <script src="./js/nav.js" defer></script>
+  <!-- Handlebar.js-->
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script id="gallery-template" type="text/x-handlebars-template">
+    {{#each galleryName}}
+    <a href="{{link}}">  <figure>
+      <img src="{{link}}" alt="{{name}}" style="width:100%">
+      <figcaption>{{name}}.</figcaption>
+    </figure></a>
+        {{/each}}
+  </script>
 </head>
 <body>
   <nav>
@@ -27,12 +36,19 @@
      <div class="line3"></div>
   </div>
 </nav>
-<section class="paintings">
+<section class="paintings" id="gallery">
 <a href="./img/season5/From Ashes Rise  (100 x 150 cm, Acrylic on canvas).jpg">  <figure>
   <img src="./img/season5/From Ashes Rise  (100 x 150 cm, Acrylic on canvas).jpg" alt="Trulli" style="width:100%">
   <figcaption>From Ashes Rise <br> (100 x 150 cm, Acrylic on canvas).</figcaption>
 </figure></a>
 
+<a href="./img/season5/From Her Lips to Gods Ears (40 x 60 cm, Acrylic on canvas).jpg">  <figure>
+  <img src="./img/season5/From Her Lips to Gods Ears (40 x 60 cm, Acrylic on canvas).jpg" alt="Trulli" style="width:100%">
+  <figcaption>From Ashes Rise <br> (100 x 150 cm, Acrylic on canvas).</figcaption>
+</figure></a>
+
 </section>
+  <script src="./js/nav.js" ></script>
+<script src="./js/handlebar.js" type="text/javascript"></script>
 </body>
 </html>

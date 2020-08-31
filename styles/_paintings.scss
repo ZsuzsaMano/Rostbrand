@@ -1,23 +1,33 @@
 // main:style.scss
 .paintings{
 @include flex(space-around, center, row);
+max-width: 90vw;
+margin:auto;
 margin-top: 10vh;
 }
 
 figure{
   width: 200px;
-  height: auto;
+  height: 150px;
   transition: 1s;
   padding: 0.8rem;
   background:rgb(244, 245, 245);
+  border: 1px solid rgb(200, 200, 200);
   color:black;
   font-size: 0.8rem;
+  margin-top: 1rem;
   &:hover{
-
+    filter: grayscale(50%);
+    transform: scale(1.1,1.1);
   }
 }
 
 img{
+  object-fit:cover;
   width: 100%;
-  height: auto;
+  height: 100%;
+}
+
+figcaption{
+display: none
 }
