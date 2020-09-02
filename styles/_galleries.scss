@@ -52,8 +52,11 @@ width: min-content;
 }
 
 .lightbox__image{
-  height: 80vh;
+  display:block;
+  max-width:80vw;
+  max-height:80vh;
   width: auto;
+  height: auto;
 }
 
 .ligthbox__caption{
@@ -75,13 +78,5 @@ width: min-content;
     width: 100px;
     height:80px;
     padding: 0.2rem;
-  }
-
-  .lightbox__image{
-    display:block;
-    max-width:90vw;
-  max-height:90vh;
-  width: auto;
-  height: auto;
   }
 }
