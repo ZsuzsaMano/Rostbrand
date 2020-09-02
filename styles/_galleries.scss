@@ -6,7 +6,7 @@ margin:auto;
 margin-top: 10vh;
 }
 
-figure{
+.gallery__figure{
   width: 200px;
   height: 150px;
   transition: 1s;
@@ -23,13 +23,13 @@ figure{
   }
 }
 
-img{
+.gallery__image{
   object-fit:cover;
   width: 100%;
   height: 100%;
 }
 
-figcaption{
+.galllery__caption{
 display: none;
 }
 
@@ -42,12 +42,15 @@ display: none;
   display:none;
 }
 
-.lightbox__image{
-  height: 80vh;
-  width: auto;
+.lightbox__figure{
   padding: 0.8rem;
   background:rgb(244, 245, 245);
   border: 1px solid rgb(220, 220, 220);
+}
+
+.lightbox__image{
+  height: 80vh;
+  width: auto;
 }
 
 #lightbox.active{

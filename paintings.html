@@ -10,9 +10,9 @@
   <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
   <script id="gallery-template" type="text/x-handlebars-template">
     {{#each galleryName}}
-    <figure>
-      <img src="{{link}}" alt="{{name}}" style="width:100%">
-      <figcaption>{{name}}.</figcaption>
+    <figure class = 'gallery__figure'>
+      <img class= "gallery__image" src="{{link}}" alt="{{name}}" style="width:100%">
+      <figcaption class='galllery__caption'>{{name}}.</figcaption>
     </figure>
         {{/each}}
   </script>
@@ -36,10 +36,11 @@
      <div class="line3"></div>
   </div>
 </nav>
-<section class="paintings" id="gallery">
-
-
+<section class="paintings" id="gallery"
 </section>
+
+<span>❯</span>
+<span>❮</span>
   <script src="./js/nav.js" ></script>
 <script src="./js/handlebar.js"></script>
   <script src="./js/lightbox.js" ></script>
