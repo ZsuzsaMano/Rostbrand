@@ -24,12 +24,14 @@ images.forEach(image=>{
     img.classList.add('lightbox__image')
     img.src = image.src;
 
+
 //if image already selected remove it
    while(figure.firstChild){
      figure.removeChild(figure.firstChild);
    }
     figure.appendChild(img);
     figure.appendChild(caption)
+    caption.innerHTML=image.nextElementSibling.innerHTML
   })
 });
 
