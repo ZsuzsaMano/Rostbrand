@@ -66,9 +66,22 @@ width: min-content;
 }
 
 @media screen and( max-width: 600px){
-  figure{
+
+  .paintings,.prints{
+    margin-top: 5vh;
+  }
+
+  .gallery__figure{
     width: 100px;
     height:80px;
     padding: 0.2rem;
+  }
+
+  .lightbox__image{
+    display:block;
+    max-width:90vw;
+  max-height:90vh;
+  width: auto;
+  height: auto;
   }
 }
