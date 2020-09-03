@@ -42,8 +42,8 @@ const appContext = { galleryName: [
   { name: 'The fall of Duckburg – Season 1 Episode 1 (100 x 150 cm, Acrylic and oil on canvas)', link: './img/season1/The fall of Duckburg – Season 1 Episode 1 (100 x 150 cm, Acrylic and oil on canvas).jpg' },
 ],
 printsName:[
-          { name: 'If they are stalking you... Hell is the sweetest place TO HIDE (dark)  -  23 x 33 - Mimeagraphy on paper - Edition of 26 - 2019', link: 'img/prints/If they are stalking you... Hell is the sweetest place TO HIDE (dark)  -  23 x 33 - Mimeagraphy on paper - Edition of 26 - 2019.jpg' },
-          { name: 'If they are stalking you... Hell is the sweetest place TO HIDE (white)  -  23 x 33 - Mimeagraphy on paper - Edition of 12 - 2019', link: 'img/prints/If they are stalking you... Hell is the sweetest place TO HIDE (white)  -  23 x 33 - Mimeagraphy on paper - Edition of 12 - 2019.jpg' },
+          { name: 'If they are stalking you... Hell is the sweetest place TO HIDE (dark)  -  23 x 33 - Mimeagraphy on paper - Edition of 26 - 2019', link: './img/prints/If they are stalking you... Hell is the sweetest place TO HIDE (dark) - 23 x 33 - Mimeagraphy on paper - Edition of 26 - 2019.jpg' },
+          { name: 'If they are stalking you... Hell is the sweetest place TO HIDE (white)  -  23 x 33 - Mimeagraphy on paper - Edition of 12 - 2019', link: './img/prints/If they are stalking you... Hell is the sweetest place TO HIDE (white) - 23 x 33 - Mimeagraphy on paper - Edition of 12 - 2019.jpg' },
           { name: 'Torn web- 40 x 50 - silkscreen print on paper - edition of 36 - 2020', link: 'img/prints/Torn web- 40 x 50 - silkscreen print on paper - edition of 36 - 2020.jpg' },],
  };
 const appHtml    = appTemplate(appContext);
