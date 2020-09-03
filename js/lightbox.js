@@ -1,5 +1,4 @@
-//implement lightbox
-
+// create lightbox
 const lightbox = document.createElement('div')
 lightbox.id= 'lightbox';
 document.body.appendChild(lightbox);
@@ -10,9 +9,9 @@ const figure = document.createElement('FIGURE');
 figure.classList.add('lightbox__figure')
 lightbox.appendChild(figure);
 
+
 const caption = document.createElement('figcaption');
 caption.classList.add('ligthbox__caption');
-caption.innerHTML = 'proba';
 
 //grab images and add them to lighbox if  they are clicked
 

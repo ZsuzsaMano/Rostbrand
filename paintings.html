@@ -11,7 +11,7 @@
   <script id="gallery-template" type="text/x-handlebars-template">
     {{#each galleryName}}
     <figure class = 'gallery__figure'>
-      <img class= "gallery__image" src="{{link}}" alt="{{name}}" style="width:100%">
+      <img class= "gallery__image" src="{{link}}" alt="{{name}}" style="width:100%" loading="lazy">
       <figcaption class='galllery__caption'>{{name}}.</figcaption>
     </figure>
         {{/each}}
@@ -39,10 +39,11 @@
 <section class="paintings" id="gallery"
 </section>
 
+
 <span>❯</span>
 <span>❮</span>
-  <script src="./js/nav.js" ></script>
-<script src="./js/handlebar.js" ></script>
-  <script src="./js/lightbox.js" ></script>
+<script defer src="./js/nav.js" ></script>
+<script defer src="./js/handlebar.js" ></script>
+<script defer src="./js/lightbox.js" ></script>
 </body>
 </html>
