@@ -3,8 +3,14 @@
 @include flex(space-around, center, row);
 max-width: 90vw;
 margin:auto;
-margin-top: 10vh;
 min-height: 90vh;
+}
+
+.prints{
+  .gallery__figure{
+    width: 300px;
+    height: 400px;
+  }
 }
 
 .gallery__figure{
@@ -79,5 +85,12 @@ width: min-content;
     width: 100px;
     height:80px;
     padding: 0.2rem;
+  }
+
+  .prints{
+    .gallery__figure{
+      width: 250px;
+      height: auto;
+    }
   }
 }
