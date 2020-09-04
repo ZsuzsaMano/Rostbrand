@@ -9,11 +9,21 @@ const figure = document.createElement('FIGURE');
 figure.classList.add('lightbox__figure')
 lightbox.appendChild(figure);
 
+//create arrows to move between images
+const arrowRight = document.createElement('div');
+arrowRight.classList.add('arrow','arrow--right');
+arrowRight.innerHTML='❯'
+
+const arrowLeft = document.createElement('div');
+arrowLeft.classList.add('arrow','arrow--left');
+arrowLeft.innerHTML='❮'
+
+
 
 const caption = document.createElement('figcaption');
 caption.classList.add('ligthbox__caption');
 
-//grab images and add them to lighbox if  they are clicked
+//grab images and add to lighbox what is clicked
 
 const images = document.querySelectorAll('img');
 images.forEach(image=>{
@@ -29,7 +39,9 @@ images.forEach(image=>{
      figure.removeChild(figure.firstChild);
    }
     figure.appendChild(img);
-    figure.appendChild(caption)
+    figure.appendChild(arrowLeft);
+    figure.appendChild(arrowRight);
+    figure.appendChild(caption);
     caption.innerHTML=image.nextElementSibling.innerHTML
   })
 });
@@ -39,3 +51,7 @@ lightbox.addEventListener('click', e => {
   if(e.target !== e.currentTarget) return;
   lightbox.classList.remove('active');
 });
+
+
+//next button to move between images
+arrowRight.addEventListener('click',()=> alert('clicked'));

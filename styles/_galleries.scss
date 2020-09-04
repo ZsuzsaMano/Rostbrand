@@ -50,12 +50,16 @@ display: none;
 }
 
 .lightbox__figure{
+  position: relative;
   padding: 0.8rem;
   background:rgb(244, 245, 245);
   border: 1px solid rgb(220, 220, 220);
   width: -webkit-min-content;
 width: -moz-min-content;
 width: min-content;
+&:hover .arrow{
+  display:block;
+}
 }
 
 .lightbox__image{
@@ -74,6 +78,27 @@ width: min-content;
   @include flex(center,center,row);
   background: rgba(0, 0, 0, 0.9);
 }
+
+.arrow{
+  cursor: pointer;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  padding:0.5em 1em;
+  background-color: rgba(256,256,256, 0.8);
+  margin: 0.5em;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 2rem;
+  display: none;
+   &--left{
+     left: 0;
+   }
+   &--right{
+     right: 0;
+  }
+}
+
 
 @media screen and( max-width: 600px){
 
