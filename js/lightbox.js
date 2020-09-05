@@ -8,6 +8,7 @@ document.body.appendChild(lightbox);
 const figure = document.createElement('FIGURE');
 figure.classList.add('lightbox__figure')
 lightbox.appendChild(figure);
+figure.oncontextmenu = function(){return false};
 
 //create arrows to move between images
 const arrowRight = document.createElement('div');

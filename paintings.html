@@ -10,7 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
   <script id="gallery-template" type="text/x-handlebars-template">
     {{#each galleryName}}
-    <figure class = 'gallery__figure'>
+    <figure class = 'gallery__figure' oncontextmenu="return false;">
       <img class= "gallery__image" src="{{link}}" alt="{{name}}" style="width:100%" loading="lazy">
       <figcaption class='galllery__caption'>{{name}}.</figcaption>
     </figure>
@@ -36,7 +36,7 @@
      <div class="line3"></div>
   </div>
 </nav>
-<section class="paintings" id="gallery"
+<section class="paintings" id="gallery" >
 </section>
 
 <script defer src="./js/nav.js" ></script>
