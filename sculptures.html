@@ -6,7 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sculptures</title>
   <link rel="stylesheet" href="./styles/style.min.css">
-  <script src="./js/nav.js" defer></script>
+  <!-- Handlebar.js-->
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script id="gallery-template" type="text/x-handlebars-template">
+    {{#each sculpturesName}}
+    <figure class = 'gallery__figure'>
+      <img class= "gallery__image" src="{{link}}" alt="{{name}}" style="width:100%" loading="lazy">
+      <figcaption class='galllery__caption'>{{name}}.</figcaption>
+    </figure>
+        {{/each}}
+  </script>
 </head>
 <body>
   <nav>
@@ -27,7 +36,9 @@
      <div class="line3"></div>
   </div>
 </nav>
-<section class="sculptures"></section>
-
+<section class="sculptures" id="gallery"></section>
+<script defer src="./js/nav.js" ></script>
+<script defer src="./js/handlebar.js" ></script>
+<script defer src="./js/lightbox.js" ></script>
 </body>
 </html>

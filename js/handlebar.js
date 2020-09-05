@@ -2,7 +2,8 @@
 
 const appSource   = document.getElementById('gallery-template').innerHTML;
 const appTemplate = Handlebars.compile(appSource);
-const appContext = { galleryName: [
+const appContext = {
+  galleryName: [
   { name: 'From Ashes Rise (100 x 150 cm, Acrylic on canvas)', link: './img/season5/From Ashes Rise  (100 x 150 cm, Acrylic on canvas).jpg' },
   { name: 'From Her Lips to Gods Ears (40 x 60 cm, Acrylic on canvas)', link: './img/season5/From Her Lips to Gods Ears (40 x 60 cm, Acrylic on canvas).jpg' },
   { name: 'His Hero Is Gone (80  x 100 cm , Acrylic and Aching on iron plate)', link: './img/season5/His Hero Is Gone (80  x 100 cm , Acrylic and Aching on iron plate).jpg' },
@@ -42,9 +43,22 @@ const appContext = { galleryName: [
   { name: 'The fall of Duckburg – Season 1 Episode 1 (100 x 150 cm, Acrylic and oil on canvas)', link: './img/season1/The fall of Duckburg – Season 1 Episode 1 (100 x 150 cm, Acrylic and oil on canvas).jpg' },
 ],
 printsName:[
-          { name: 'If they are stalking you... Hell is the sweetest place TO HIDE (dark)  -  23 x 33 - Mimeagraphy on paper - Edition of 26 - 2019', link: './img/prints/If they are stalking you... Hell is the sweetest place TO HIDE (dark) - 23 x 33 - Mimeagraphy on paper - Edition of 26 - 2019.jpg' },
-          { name: 'If they are stalking you... Hell is the sweetest place TO HIDE (white)  -  23 x 33 - Mimeagraphy on paper - Edition of 12 - 2019', link: './img/prints/If they are stalking you... Hell is the sweetest place TO HIDE (white) - 23 x 33 - Mimeagraphy on paper - Edition of 12 - 2019.jpg' },
-          { name: 'Torn web- 40 x 50 - silkscreen print on paper - edition of 36 - 2020', link: 'img/prints/Torn web- 40 x 50 - silkscreen print on paper - edition of 36 - 2020.jpg' },],
+  { name: 'If they are stalking you... Hell is the sweetest place TO HIDE (dark)  -  23 x 33 - Mimeagraphy on paper - Edition of 26 - 2019', link: './img/prints/If they are stalking you... Hell is the sweetest place TO HIDE (dark) - 23 x 33 - Mimeagraphy on paper - Edition of 26 - 2019.jpg' },
+  { name: 'If they are stalking you... Hell is the sweetest place TO HIDE (white)  -  23 x 33 - Mimeagraphy on paper - Edition of 12 - 2019', link: './img/prints/If they are stalking you... Hell is the sweetest place TO HIDE (white) - 23 x 33 - Mimeagraphy on paper - Edition of 12 - 2019.jpg' },
+  { name: 'Torn web- 40 x 50 - silkscreen print on paper - edition of 36 - 2020', link: 'img/prints/Torn web- 40 x 50 - silkscreen print on paper - edition of 36 - 2020.jpg' },
+],
+sculpturesName:[
+  {name:'bird (135 cm).jpg', link:'./img/sculptures/bird (135 cm).jpg'},
+  {name:'Dragonfly (110 x 130 cm )', link:'./img/sculptures/Dragonfly (110 x 130 cm )).jpg'},
+  {name:'Dragonfly (110 x 130 cm)', link:'img/sculptures/Dragonfly (110 x 130 cm.jpg'},
+  {name:'', link:'./img/sculptures/DSC08537.jpg'},
+  {name:'robot 1', link:'img/sculptures/robot1.jpg'},
+  {name:'Steel bug Nr 1 (43 cm)', link:'./img/sculptures/Steel bug Nr 1 (43 cm).jpg'},
+  {name:'Steel bug Nr 2 (25 cm)', link:'./img/sculptures/Steel bug Nr 2 (25 cm).jpg'},
+  {name:'Steel bug Nr 3 ( 37 cm)', link:'img/sculptures/Steel bug Nr 3 ( 37 cm).jpg'},
+  {name:'Steel bug Nr 4 ( 38 cm)', link:'img/sculptures/Steel bug Nr 4 ( 38 cm) .jpg'},
+  {name:'Steel bug Nr 5 ( 42 cm)', link:'img/sculptures/Steel bug Nr 5 ( 42 cm).jpg'},
+],
  };
 const appHtml    = appTemplate(appContext);
 const displayApp = document.getElementById('gallery');
