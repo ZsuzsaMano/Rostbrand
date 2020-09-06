@@ -11,13 +11,13 @@ lightbox.appendChild(figure);
 figure.oncontextmenu = function(){return false};
 
 //create arrows to move between images
-const arrowRight = document.createElement('div');
-arrowRight.classList.add('arrow','arrow--right');
-arrowRight.innerHTML='❯'
-
-const arrowLeft = document.createElement('div');
-arrowLeft.classList.add('arrow','arrow--left');
-arrowLeft.innerHTML='❮'
+// const arrowRight = document.createElement('div');
+// arrowRight.classList.add('arrow','arrow--right');
+// arrowRight.innerHTML='❯'
+//
+// const arrowLeft = document.createElement('div');
+// arrowLeft.classList.add('arrow','arrow--left');
+// arrowLeft.innerHTML='❮'
 
 
 
@@ -40,19 +40,17 @@ images.forEach(image=>{
      figure.removeChild(figure.firstChild);
    }
     figure.appendChild(img);
-    figure.appendChild(arrowLeft);
-    figure.appendChild(arrowRight);
+    //figure.appendChild(arrowLeft);
+    //figure.appendChild(arrowRight);
     figure.appendChild(caption);
     caption.innerHTML=image.nextElementSibling.innerHTML
   })
 });
+
+
 
 //remove lightbox if clicked
 lightbox.addEventListener('click', e => {
   if(e.target !== e.currentTarget) return;
   lightbox.classList.remove('active');
 });
-
-
-//next button to move between images
-arrowRight.addEventListener('click',()=> alert('clicked'));

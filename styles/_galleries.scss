@@ -55,10 +55,10 @@ display: none;
   background:rgb(244, 245, 245);
   border: 1px solid rgb(220, 220, 220);
   width: -webkit-min-content;
-width: -moz-min-content;
-width: min-content;
-&:hover .arrow{
-  display:block;
+  width: -moz-min-content;
+  width: min-content;
+    &:hover .arrow{
+    display:block;
 }
 }
 
