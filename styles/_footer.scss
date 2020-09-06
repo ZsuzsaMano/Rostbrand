@@ -1,6 +1,7 @@
 // main: style.scss
 
 footer{
+  min-height: 10vh;
   @include flex(space-between, center, row);
   background-color: $main-color;
 color: $font-color;
