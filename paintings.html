@@ -11,7 +11,7 @@
   <script id="gallery-template" type="text/x-handlebars-template">
     {{#each galleryName}}
     <figure class = 'gallery__figure' oncontextmenu="return false;">
-      <img class= "gallery__image" src="{{link}}" alt="{{name}}" style="width:100%" loading="lazy">
+      <img class= "gallery__image" src="./img/{{link}}" alt="{{name}}" style="width:100%" loading="lazy">
       <figcaption class='galllery__caption'>{{name}}.</figcaption>
     </figure>
         {{/each}}
@@ -37,6 +37,9 @@
   </div>
 </nav>
 <section class="paintings" id="gallery" >
+</section>
+<section class="lightbox" id="lightbox">
+
 </section>
 <footer>
   <div class="copyright">

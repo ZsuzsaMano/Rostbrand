@@ -11,7 +11,7 @@
   <script id="gallery-template" type="text/x-handlebars-template">
     {{#each sculpturesName}}
     <figure class = 'gallery__figure' oncontextmenu="return false;">
-      <img class= "gallery__image" src="{{link}}" alt="{{name}}" style="width:100%" loading="lazy">
+      <img class= "gallery__image" src="./img/{{link}}" alt="{{name}}" style="width:100%" loading="lazy">
       <figcaption class='galllery__caption'>{{name}}.</figcaption>
     </figure>
         {{/each}}

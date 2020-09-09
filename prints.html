@@ -11,10 +11,18 @@
   <script id="gallery-template" type="text/x-handlebars-template">
     {{#each printsName}}
     <figure class = 'gallery__figure' oncontextmenu="return false;">
-      <img class= "gallery__image" src="{{link}}" alt="{{name}}" style="width:100%" >
+      <img class= "gallery__image" src="./img/{{link}}" alt="{{name}}" style="width:100%" >
       <figcaption class='galllery__caption'>{{name}}.</figcaption>
     </figure>
         {{/each}}
+<!-- <section class="thumb__gallery">
+    {{#each printsName}}
+    <figure class = 'thumb__figure' oncontextmenu="return false;">
+      <img class= "thumb__image" src="./img/Thumb/{{link}}" alt="{{name}}" style="width:100%" >
+      <figcaption class='thumb__caption'>{{name}}.</figcaption>
+    </figure>
+        {{/each}}
+        </section> -->
   </script>
 </head>
 <body>
@@ -38,8 +46,8 @@
 </nav>
 <section class="prints" id="gallery">
 
-
 </section>
+
 <footer>
   <div class="copyright">
     <small>&copy; Copyright 2020, Rostbrand</small>
