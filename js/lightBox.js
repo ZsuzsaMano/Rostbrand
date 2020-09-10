@@ -1,14 +1,14 @@
 // Open the Modal
 function openLightbox() {
-  document.getElementById("lightbox").style.display = "block";
+  document.getElementById("lightbox").classList.add('active');
 }
 
 // Close the Modal
 function closeLightbox() {
-  document.getElementById("lightbox").style.display = "none";
+  document.getElementById("lightbox").classList.remove('active')
 }
 
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -22,8 +22,8 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  var i;
-  var figures = document.getElementsByClassName("lightbox__figure");
+  let i;
+  const figures = document.getElementsByClassName("lightbox__figure");
   //var dots = document.getElementsByClassName("demo");
   var caption = document.getElementById("galllery__caption");
   if (n > figures.length) {slideIndex = 1}

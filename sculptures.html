@@ -9,12 +9,26 @@
   <!-- Handlebar.js-->
   <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
   <script id="gallery-template" type="text/x-handlebars-template">
-    {{#each sculpturesName}}
-    <figure class = 'gallery__figure' oncontextmenu="return false;">
-      <img class= "gallery__image" src="./img/{{link}}" alt="{{name}}" style="width:100%" loading="lazy">
-      <figcaption class='galllery__caption'>{{name}}.</figcaption>
-    </figure>
-        {{/each}}
+    <section class="thumb__gallery">
+        {{#each sculpturesName}}
+        <figure class = 'thumb__figure' oncontextmenu="return false;"  onclick="openLightbox();currentSlide(1)">
+          <img class= "thumb__image" src="./img/Thumb/{{link}}" alt="{{name}}" >
+          <figcaption class='thumb__caption'>{{name}}.</figcaption>
+        </figure>
+            {{/each}}
+            </section>
+            <section class="lightbox" id="lightbox">
+              <div class="lightbox__close" onclick="closeLightbox()">&times</div>
+              {{#each sculpturesName}}
+              <figure class = 'lightbox__figure' oncontextmenu="return false;" >
+                <img class= "lightbox__image" src="./img/{{link}}" alt="{{name}}"  >
+                <figcaption class='ligthbox__caption'>{{name}}.</figcaption>
+                <a class="arrow arrow--left" onclick="plusSlides(-1)">❮</a>
+               <a class="arrow arrow--right" onclick="plusSlides(1)">❯</a>
+              </figure>
+
+                  {{/each}}
+            </section>
   </script>
 </head>
 <body>
@@ -49,6 +63,6 @@
 </footer>
 <script defer src="./js/nav.js" ></script>
 <script defer src="./js/handlebar.js" ></script>
-<script defer src="./js/lightbox.js" ></script>
+<script defer src="./js/lightBox.js" ></script>
 </body>
 </html>
