@@ -5,7 +5,7 @@ function openLightbox() {
 
 // Close the Modal
 function closeLightbox() {
-  document.getElementById("lightbox").classList.remove('active')
+  document.getElementById("lightbox").classList.remove('active');
 }
 
 let slideIndex = 1;
@@ -26,7 +26,7 @@ function showSlides(n) {
   const figures = document.getElementsByClassName("lightbox__figure");
   //var dots = document.getElementsByClassName("demo");
   var caption = document.getElementById("galllery__caption");
-  if (n > figures.length) {slideIndex = 1}
+  if (n > figures.length) {slideIndex =1}
   if (n < 1) {slideIndex = figures.length}
   for (i = 0; i < figures.length; i++) {
   figures[i].style.display = "none";

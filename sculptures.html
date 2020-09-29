@@ -11,7 +11,7 @@
   <script id="gallery-template" type="text/x-handlebars-template">
     <section class="thumb__gallery">
         {{#each sculpturesName}}
-        <figure class = 'thumb__figure' oncontextmenu="return false;"  onclick="openLightbox();currentSlide(1)">
+        <figure class = 'thumb__figure' oncontextmenu="return false;"  onclick="openLightbox();currentSlide({{id}})">
           <img class= "thumb__image" src="./img/Thumb/{{link}}" alt="{{name}}" >
           <figcaption class='thumb__caption'>{{name}}.</figcaption>
         </figure>
