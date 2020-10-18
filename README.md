@@ -66,7 +66,7 @@ The website was created for an awsome visual artist to display his works.
 ### Contact
 <p align="center">
   <a href="http://petertauber.at/">
-    <img src="./gif/conact.png" alt="contact" >
+    <img src="./gif/contact.png" alt="contact" >
   </a>
 </p>
 <br>
