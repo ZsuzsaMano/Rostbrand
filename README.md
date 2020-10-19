@@ -19,7 +19,7 @@ Tauber Peter visual artist's website
 
 
 ***
-The website was created for an awsome visual artist to display his works.
+The website of an awesome visual artist displaying his works.
 
 ***
 ### Menu
