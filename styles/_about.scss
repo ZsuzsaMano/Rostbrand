@@ -5,6 +5,8 @@
   flex-wrap: wrap;
   min-height: 90vh;
   overflow: hidden;
+  background-color: $main-color;
+  color:$font-color;
 
   .text{
     display: flex;
@@ -13,16 +15,10 @@
     align-items: center;
   //  background:  linear-gradient(to right,#7c9ac8,#a9bad4);
     flex:2 1 40rem;
-    h1{
-      margin:1rem;
-      padding-bottom: 2em;
-    }
-    span{
-      font-size: 3rem;
-    }
 
     p{
-      max-width: 80%;
+      width: 80%;
+      max-width: 450px;
       line-height: 2rem;
     }
     button{
@@ -32,6 +28,10 @@
       margin: 2em;
       background-color: $main-color;
       border-radius: 5px;
+      filter:drop-shadow(1px 1px 1px $font-color);
+      &:hover{
+        opacity: 0.7;
+      }
     }
   }
   .image{
