@@ -34,7 +34,31 @@ nav{
   font-weight: bold;
   font-size: 14px;
   letter-spacing:3px;
+  padding: 5px;
+  position:relative;
+&:after {
+  bottom: -1px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: $font-color;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
 }
+&:hover:after{
+  width: 100%;
+  left: 0;
+}
+}
+
+.nav-links a.active:after{
+  width: 100%;
+  left: 0;
+}
+
+
 
 .burger{
   display:none;
