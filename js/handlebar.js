@@ -215,11 +215,6 @@ const appContext = {
       link: "peti202204/O.T.  (Acryl auf Leinwand, 20x32cm,2022).jpg",
     },
     {
-      id: 43,
-      name: "O.T.  (Acryl auf Leinwand, 20x32cm,2022)",
-      link: "peti202204/O.T.  (Acryl auf Leinwand, 20x32cm,2022).jpg",
-    },
-    {
       id: 44,
       name: "O.T.  (Acryl auf Leinwand, 21x33cm,2022)",
       link: "peti202204/O.T.  (Acryl auf Leinwand, 21x33cm,2022).jpg",
@@ -448,6 +443,14 @@ const appContext = {
     },
   ],
 };
-const appHtml    = appTemplate(appContext);
+reverseGallery=appContext.galleryName.reverse()
+reversePrints=appContext.printsName.reverse()
+reverseSculptures=appContext.sculpturesName.reverse();
+const appContextReverse = {
+  galleryName: reverseGallery,
+  printsName: reversePrints,
+  sculpturesName:reverseSculptures,
+};
+const appHtml = appTemplate(appContextReverse);
 const displayApp = document.getElementById('gallery');
 displayApp.innerHTML = appHtml;
