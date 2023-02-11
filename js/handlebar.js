@@ -215,64 +215,69 @@ const appContext = {
       link: "peti202204/O.T.  (Acryl auf Leinwand, 20x32cm,2022).jpg",
     },
     {
-      id: 44,
+      id: 43,
       name: "O.T.  (Acryl auf Leinwand, 21x33cm,2022)",
       link: "peti202204/O.T.  (Acryl auf Leinwand, 21x33cm,2022).jpg",
     },
     {
-      id: 45,
+      id: 44,
       name: "O.T.  (Acryl auf Leinwand, 25x32cm,2022)",
       link: "peti202204/O.T.  (Acryl auf Leinwand, 25x32cm,2022).jpg",
     },
     {
-      id: 46,
+      id: 45,
       name: "O.T. (Acryl auf Leinwand, 90x50cm,2022)",
       link: "peti202204/O.T. (Acryl auf Leinwand, 90x50cm,2022).jpg",
     },
     {
-      id: 47,
+      id: 46,
       name: "Pink turns Blue (Acryl auf Leinwand, 100x70cm,2020)",
       link: "peti202204/Pink turns Blue (Acryl auf Leinwand, 100x70cm,2020).jpg",
     },
     {
-      id: 48,
+      id: 47,
       name: "Stop screaming! (it´s what the bomb wants us to do) - (Acryl auf Leinwand, 70x150cm,2022)",
       link: "peti202204/Stop screaming! (it´s what the bomb wants us to do) - (Acryl auf Leinwand, 70x150cm,2022).jpg",
     },
     {
-      id: 49,
+      id: 48,
       name: "The fall of Duckburg – Season 4 Episode 1 (90 x 70 cm, Acrylic on canvas, 2020)",
       link: "peti202204/The fall of Duckburg – Season 4 Episode 1 (90 x 70 cm, Acrylic on canvas, 2020).jpg",
     },
     {
-      id: 50,
+      id: 49,
       name: "The fall of Duckburg – Season 4 Episode 2 (50 x 70 cm, Acrylic on canvas, 2020)",
       link: "peti202204/The fall of Duckburg – Season 4 Episode 2 (50 x 70 cm, Acrylic on canvas, 2020).jpg",
     },
     {
-      id: 51,
+      id: 50,
       name: "The fall of Duckburg – Season 6 Episode 1 (20 x 30 cm, Acrylic  on canvas, 2020)",
       link: "peti202204/The fall of Duckburg – Season 6 Episode 1 (20 x 30 cm, Acrylic  on canvas, 2020).jpg",
     },
     {
-      id: 52,
+      id: 51,
       name: "The fall of Duckburg – Season 6 Episode 2 (90 x 90 cm, Acrylic on canvas, 2022)",
       link: "peti202204/The fall of Duckburg – Season 6 Episode 2 (90 x 90 cm, Acrylic on canvas, 2022).jpg",
     },
     {
-      id: 53,
+      id: 52,
       name: "The fall of Duckburg – Season 6 Episode 3 (90 x 45 cm, Acrylic  on canvas, 2020)",
       link: "peti202204/The fall of Duckburg – Season 6 Episode 3 (90 x 45 cm, Acrylic  on canvas, 2020).jpg",
     },
     {
-      id: 54,
+      id: 53,
       name: "The sun is going nowhere (Acryl auf Leinwand, 100x150cm,2022)",
       link: "peti202204/The sun is going nowhere (Acryl auf Leinwand, 100x150cm,2022).jpg",
     },
     {
-      id: 55,
+      id: 54,
       name: "You look like I need a drink (Acryl auf Leinwand, 130x150cm,2022)",
       link: "peti202204/You look like I need a drink (Acryl auf Leinwand, 130x150cm,2022).jpg",
+    },
+    {
+      id: 55,
+      name: "Wet like a cherry in the bloodbath of birth, Acrylic on canvas, 130x170cm,2022",
+      link: "2023/Wet like a cherry in the bloodbath of birth, Acrylic on canvas, 130x170cm,2022.jpg",
     },
     {
       id: 56,
@@ -378,11 +383,6 @@ const appContext = {
       id: 76,
       name: "We need a gimmic, 40 x 40 cm, Acrylic on canvas, 2022",
       link: "2023/We need a gimmic, 40 x 40 cm, Acrylic on canvas, 2022.jpg",
-    },
-    {
-      id: 77,
-      name: "Wet like a cherry in the bloodbath of birth, Acrylic on canvas, 130x170cm,2022",
-      link: "2023/Wet like a cherry in the bloodbath of birth, Acrylic on canvas, 130x170cm,2022.jpg",
     },
   ],
   printsName: [
