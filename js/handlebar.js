@@ -443,14 +443,14 @@ const appContext = {
     },
   ],
 };
-reverseGallery=appContext.galleryName.reverse()
-reversePrints=appContext.printsName.reverse()
-reverseSculptures=appContext.sculpturesName.reverse();
-const appContextReverse = {
-  galleryName: reverseGallery,
-  printsName: reversePrints,
-  sculpturesName:reverseSculptures,
-};
-const appHtml = appTemplate(appContextReverse);
+// reverseGallery=appContext.galleryName.reverse()
+// reversePrints=appContext.printsName.reverse()
+// reverseSculptures=appContext.sculpturesName.reverse();
+// const appContextReverse = {
+//   galleryName: reverseGallery,
+//   printsName: reversePrints,
+//   sculpturesName:reverseSculptures,
+// };
+const appHtml = appTemplate(appContext);
 const displayApp = document.getElementById('gallery');
 displayApp.innerHTML = appHtml;
